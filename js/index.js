@@ -3,17 +3,13 @@ let inpObj = document.querySelector('.form input');
 
 function submitForm(e) {
     e.preventDefault();
+        alertify.set('notifier','position', 'top-right');
 
     if (!inpObj.checkValidity()) {
-        alertify.set('notifier','position', 'top-right');
         alertify.error('Хибні дані');
     }
     else {
-        fetch('form.php', {
-                method: 'POST',
-                body: new FormData(document.querySelector('.form'))
-            })
-            .then(response => response.text())
-            .then(name => alertify.success(name));
+        let name = document.getElementById('name').value;
+        alertify.success(name+", ми незабаром з Вами зв'яжемося.");
     }
 }
