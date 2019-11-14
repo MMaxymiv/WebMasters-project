@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebMasters</title>
+    <link
+      rel="shortcut icon"
+      href="img/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/top-menu.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div id="logo">
+        <h1>WebMasters</h1>
+      </div>
+      <nav class="top-menu">
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#sign-up">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="off">
+        <div class="wrapper-menu">
+          <div class="line-menu half start"></div>
+          <div class="line-menu"></div>
+          <div class="line-menu half end"></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home">
+        <h2 class="page-title">Навчання digital-професіями очно і онлайн</h2>
+        <p>
+          Практика і досвід викладачів, розкриті в унікальних <br />програмах
+          навчання.
+        </p>
+        <img
+          src="img/home-img.svg"
+          alt="Дизайнер"
+          class="picture"
+          id="home-picture"
+        />
+      </section>
+      <section id="about">
+        <h2 class="page-title">Місія</h2>
+        <p class="main-idea">
+          Основна ідея академії - давати якісне навчання нового формату,
+          націлене на результат. Допомагаємо реалізувати себе в Digital, знайти
+          нові сфери розвитку і підвищити експертність в цифровому середовищі.
+        </p>
+        <div id="description">
+          <div>
+            <img src="img/icons/progress.png" alt="Прогрес" />
+            <h3 class="description-title">Навчання заради результату</h3>
+            <div class="description-text">
+              <p>
+                У поточних умовах саме результат максимально важливий як для
+                студента, так і для роботодавця і підприємця.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/icons/teachers.png" alt="Викладачі" />
+            <h3 class="description-title">Досвідчені викладачі</h3>
+            <div>
+              <p class="description-text">
+                Вас будуть навчати дійсно досвідчені арт-директори, дизайнери,
+                розробники, підприємці, керівники та інші фахівці високого
+                рівня.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="img/icons/work.png" alt="Робота" />
+            <h3 class="description-title">
+              Працевлаштування і розиток проектів
+            </h3>
+            <div>
+              <p class="description-text">
+                Допомагаємо нашим студентам в створенні власних проектів,
+                працевлаштуванні та проходження стажування.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <h2 class="page-title">Галерея</h2>
+        <div class="example">
+          <div>
+            <h3>John Doe</h3>
+            <img
+              src="img/john-doe.svg"
+              alt="John Doe"
+              class="gallery-picture"
+            />
+          </div>
+          <div>
+            <h3>Emma Di</h3>
+            <img src="img/emma-di.svg" alt="Emma Di" class="gallery-picture" />
+          </div>
+        </div>
+      </section>
+      <section id="sign-up">
+        <h2 class="page-title">Записатися на курс</h2>
+        <img
+          src="img/work.svg"
+          alt="Записатися на курс"
+          class="picture"
+          id="sign-up-picture"
+        />
+        <br />
+        <form class="form" method="POST">
+          <input
+            class="form-box"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <br />
+          <input
+            class="form-box"
+            type="text"
+            name="name"
+            placeholder="Ім'я"
+            required
+          />
+          <br />
+          <textarea
+            id="message"
+            class="form-box"
+            name="message"
+            placeholder="Повідомлення"
+          ></textarea>
+          <br />
+          <input class="button" type="submit" name="submit" value="Надіслати" />
+        </form>
+      </section>
+      <footer>
+        <section id="contacts">
+          <h2 class="page-title">Контакти</h2>
+          <div class="contacts">
+            <div class="data">
+              <div class="icons-block">
+                <img src="img/icons/phone.png" alt="Телефон" class="icons" />
+                <p>0980847777</p>
+              </div>
+              <div class="icons-block">
+                <img src="img/icons/email.png" alt="Email" class="icons" />
+                <p>web-master@gmail.com</p>
+              </div>
+              <div class="icons-block">
+                <img src="img/icons/place.png" alt="Адреса" class="icons" />
+                <p>м.Львів, вул. Львівська, 15</p>
+              </div>
+            </div>
+            <div class="data">
+              <img
+                src="img/contact-us.svg"
+                alt="Контакти"
+                class="picture"
+                id="contact-us"
+              />
+            </div>
+          </div>
+        </section>
+        <div class="footer__copyright">
+          <span>© WebMasters, 2019</span>
+        </div>
+      </footer>
+    </main>
+    <script src="js/index.js"></script>
+    <script src="js/wrapper-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>var scroll = new SmoothScroll('a[href*="#"]');</script>
+  </body>
+</html>
