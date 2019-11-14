@@ -294,6 +294,11 @@ textarea {
   max-width: 75%;
 }
 
+.alertify-notifier .ajs-message {
+  color: #000;
+  text-align: center;
+}
+
 @media (min-width: 525px) {
   #home .page-title {
     margin-top: 100px;

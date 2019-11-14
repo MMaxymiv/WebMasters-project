@@ -5,7 +5,8 @@ function submitForm(e) {
     e.preventDefault();
 
     if (!inpObj.checkValidity()) {
-        alert('Хибні дані.');
+        alertify.set('notifier','position', 'top-right');
+        alertify.error('Хибні дані');
     }
     else {
         fetch('form.php', {
@@ -13,10 +14,6 @@ function submitForm(e) {
                 body: new FormData(document.querySelector('.form'))
             })
             .then(response => response.text())
-            .then(name => alert(name));
+            .then(name => alertify.success(name));
     }
 }
-
-let header = document.querySelector('.header');
-let wrapperMenu = document.querySelector('.wrapper-menu');
-let topMenu = document.querySelector('.top-menu');
